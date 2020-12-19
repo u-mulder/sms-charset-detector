@@ -30,15 +30,21 @@ class BasicCharsetDetector implements CharsetDetectorInterface
         'å', 'É', '/', '?', 'O', '§', 'o', 'à',
 	];
 
-	// Chars that take TWO  
+    /**
+     * Extension set characters, each occupy two positions in sms
+     */
 	protected const GSM_EXTENSION_SET = [
 		'|', '^', '€', '{', '}', '[', '~', ']', '\\',
 	];
 	
-	/** */
+	/**
+     * Use extension set characters or not when detecting the charset
+     */
 	protected $includeExtensionSet = true;
 
-	/** */
+	/**
+     * Current charset, stores either all characters or ones from basic set only
+     */
 	protected $currentCharset = [];
 	
 	public function __construct(bool $includeExtensionSet) 
@@ -49,7 +55,8 @@ class BasicCharsetDetector implements CharsetDetectorInterface
 	public function setIncludeExtensionSet(bool $includeExtensionSet): self 
 	{
 		$this->includeExtensionSet = $includeExtensionSet;
-		$this->currentChars = $this->includeExtensionSet 
+
+		$this->currentCharset = $this->includeExtensionSet
 			? static::GSM_BASIC_SET
 			: array_merge(static::GSM_BASIC_SET, static::GSM_EXTENSION_SET);
 

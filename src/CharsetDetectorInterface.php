@@ -6,8 +6,8 @@ namespace Um\CharsetDetector;
 
 interface CharsetDetectorInterface
 {
-    protected const GSM_CHARSET = 'gsm';
-    protected const UCS_CHARSET = 'ucs';
+    public const GSM_CHARSET = 'gsm';
+    public const UCS_CHARSET = 'ucs';
 
     public function detectCharset(string $message): string;
 }

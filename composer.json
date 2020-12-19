@@ -1,0 +1,9 @@
+{
+    "name": "um/sms_charset_detector",
+    "description": "Detecting sms charset",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "require": {}
+}

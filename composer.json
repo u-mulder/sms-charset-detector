@@ -5,5 +5,8 @@
     "require-dev": {
         "phpunit/phpunit": "^9.5"
     },
-    "require": {}
+    "require": {
+        "ext-mbstring": "*",
+        "ext-json": "*"
+    }
 }

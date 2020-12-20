@@ -83,4 +83,9 @@ class BasicCharsetDetector implements CharsetDetectorInterface
     {
         return static::GSM_CHARSET === $this->detectCharset($message);
     }
+
+    public function getGsmCharsetAsJson(): string
+    {
+        return json_encode($this->currentCharset);
+    }
 }

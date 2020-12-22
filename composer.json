@@ -4,20 +4,25 @@
     "keywords" : ["sms", "gsm", "ucs", "sms charset"],
     "type": "library",
     "authors" : [{
-		"name" : "u-mulder",
-		"email" : "kirill-lpk@ya.ru",
-		"homepage" : "https://www.u-mulder.com/"
-	}],
+        "name" : "u-mulder",
+        "email" : "kirill-lpk@ya.ru",
+        "homepage" : "https://www.u-mulder.com/"
+    }],
     "require-dev": {
         "phpunit/phpunit": "^9.5"
     },
     "autoload": {
         "psr-4": {
-			"Um\\CharsetDetector\\": "src/"
-		}
-	},
+            "Um\\CharsetDetector\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Um\\CharsetDetector\\Tests\\": "test/"
+        }
+    },
     "scripts": {
-	    "test": "./vendor/bin/phpunit test/"
+        "test": "./vendor/bin/phpunit test/"
     },
     "require": {
         "ext-mbstring": "*",

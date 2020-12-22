@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace Um\CharsetDetector\Tests;
+
 use PHPUnit\Framework\TestCase;
 use Um\CharsetDetector\BasicCharsetDetector;
 use Um\CharsetDetector\CharsetDetectorInterface;

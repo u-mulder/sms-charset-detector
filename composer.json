@@ -16,6 +16,9 @@
 			"Um\\CharsetDetector\\": "src/"
 		}
 	},
+    "scripts": {
+	    "test": "./vendor/bin/phpunit test/"
+    },
     "require": {
         "ext-mbstring": "*",
         "ext-json": "*"

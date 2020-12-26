@@ -41,7 +41,7 @@ class BasicCharsetDetector implements CharsetDetectorInterface
     /** Current charset, stores either all characters or ones from basic set only */
     protected $currentCharset = [];
 
-    public function __construct(bool $includeExtensionSet)
+    public function __construct(bool $includeExtensionSet = true)
     {
         $this->setIncludeExtensionSet($includeExtensionSet);
     }

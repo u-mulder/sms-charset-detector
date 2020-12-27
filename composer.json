@@ -7,7 +7,7 @@
         "name": "u-mulder",
         "email": "kirill-lpk@ya.ru",
         "homepage": "https://www.u-mulder.com/",
-        "rolee": "Developer"
+        "role": "Developer"
     }],
     "license": "MIT",
     "require-dev": {

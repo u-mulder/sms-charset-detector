@@ -18,7 +18,7 @@ Install package with [Composer](https://getcomposer.org/):
 
 Simple usage:
 
-```
+```php
 use Um\CharsetDetector\BasicCharsetDetector;
 
 $detector = new BasicCharsetDetector();
@@ -28,6 +28,6 @@ $encoding = $detector->detectCharset($message);
 echo $encoding;	// outputs either 'gsm' or 'ucs'
 
 // simple check if encoding is 'gsm'
-$messageHasGmsEncoding = $detector->isGmsEncoding($message);
-var_dump($messageHasGmsEncoding);   // outputs either `true` or `false`
+$messageHasGsmCharset = $detector->isGsmCharset($message);
+var_dump($messageHasGsmCharset);   // outputs either `true` or `false`
 ```

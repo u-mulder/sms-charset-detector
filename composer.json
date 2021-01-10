@@ -1,9 +1,9 @@
 {
-    "name": "um/sms_charset_detector",
+    "name": "um/sms-charset-detector",
     "description": "Small library for detecting whether your sms is using gsm charset only or not",
     "keywords": ["sms", "gsm", "ucs", "sms charset"],
     "type": "library",
-    "minimum-stability": "RC",
+    "minimum-stability": "stable",
     "authors": [{
         "name": "u-mulder",
         "email": "kirill-lpk@ya.ru",

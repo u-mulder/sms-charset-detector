@@ -51,8 +51,8 @@ class BasicCharsetDetector implements CharsetDetectorInterface
         $this->includeExtensionSet = $includeExtensionSet;
 
         $this->currentCharset = $this->includeExtensionSet
-            ? static::GSM_BASIC_SET
-            : array_merge(static::GSM_BASIC_SET, static::GSM_EXTENSION_SET);
+            ? array_merge(static::GSM_BASIC_SET, static::GSM_EXTENSION_SET)
+            : static::GSM_BASIC_SET;
 
         return $this;
     }
